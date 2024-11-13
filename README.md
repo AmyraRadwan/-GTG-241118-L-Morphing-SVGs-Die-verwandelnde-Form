@@ -1,2 +1,12 @@
-# -GTG-241118-L-Morphing-SVGs-Die-verwandelnde-Form
-[18.11.2024] Diese Kurseinheit beschäftigt sich mit CSS- und SVG-Animationen bis hinzu SVG-Morphing und Text auf SVG-Pfad Animationen.
+# [GTG] Morphing SVG's – Die [ver]wandelnde Form
+
+### Inhalte:
++ CSS Animationen
++ SVG Animationen
++ SVG Gradients
++ CSS Gradients
++ SVG Morphing
++ Text auf SVG-Pfad Animation
+
+### GitHub Download:
+Ladet euch das Ergebnis der zweiten Session herunter indem ihr auf den grünen Button »Code <>« clickt und dann auf »Download ZIP«.
