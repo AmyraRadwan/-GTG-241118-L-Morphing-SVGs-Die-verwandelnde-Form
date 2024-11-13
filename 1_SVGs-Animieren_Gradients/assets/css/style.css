@@ -1,0 +1,81 @@
+/* -----------------------------
+        SVGs ANIMIEREN
+------------------------------ */
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+ 
+svg {
+	margin-top: 5rem;
+	width: 100%;
+	height: auto;
+}
+
+/* -----------------------------
+           SVG-HOVER
+------------------------------ */
+
+.animatesvg:hover {
+	/* Beim hovern verändert sich die Farbe des SVG's */
+	fill: #cafd00 !important;
+	transition: fill 1s ease; /* Mit transition wird ein langsamer Übergang (1 Sekunde) für fill festgelegt */
+}
+
+/* -----------------------------
+         CSS-ANIMATION
+------------------------------ */
+
+.animatecss {
+	transform-box: fill-box; /* Center SVG */
+	transform-origin: center; /* Center SVG */
+	animation: rotation 6s linear infinite; /* Animation einstellen */
+}
+
+/* Animation erstellen */
+@keyframes rotation {
+	50% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.animatecss2 {
+	transform-box: fill-box; /* Center SVG */
+	transform-origin: center; /* Center SVG */
+	animation: reverserotation 5s ease-in-out infinite; /* Animation einstellen */
+}
+
+/* Animation erstellen */
+@keyframes reverserotation {
+	0% {
+		transform: scale(1) rotate3d(1, 1, 1, 360deg); /* Hier werden gleich zwei Animationen gleichzeitig gestartet (scale & rotate3d) */
+	}
+	50% {
+		transform: scale(0) rotate3d(2, -1, -1, 0deg);
+	}
+	100% {
+		transform: scale(1) rotate3d(1, 1, 1, 360deg);
+	}
+}
+
+/* -----------------------------
+         CSS-GRADIENTS
+------------------------------ */
+
+body {
+	/* Mit radial-gradient, linear-gradient und conic-gradient lassen sich Verläufe erstellen und auf Elemente anwenden */
+	/* background: linear-gradient(#e66465, #9198e5); */
+	/* background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(11, 236, 165, 1) 35%, rgba(0, 212, 255, 1) 100%); */
+	/* background: conic-gradient(from 90deg, red, yellow, green); */
+	/* background: repeating-conic-gradient(red 0%, yellow 15%, red 33%); */
+	/* background: repeating-radial-gradient(#e66465, #9198e5 20%);*/
+	/* background: repeating-linear-gradient(transparent, #4d9f0c 40px), repeating-linear-gradient(0.25turn, transparent, #3f87a6 20px); */
+	background-repeat: no-repeat;
+	background-color: #72adff;
+	min-height: 100vh;
+}
